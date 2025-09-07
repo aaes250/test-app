@@ -1,0 +1,36 @@
+
+    body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1db954, #191414);
+  color: white;
+  text-align: center;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+button {
+  background-color: #1db954;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #17a44a;
+}
+
+.hidden {
+  display: none;
+}
