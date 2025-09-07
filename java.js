@@ -1,5 +1,5 @@
 const CLIENT_ID = "821c2e004b094b928bdf7d4ab553e034";
-const REDIRECT_URI = "http://127.0.0.1:5500/main.html"; // must match Spotify dashboard
+const REDIRECT_URI = "https://aaes250.github.io/test-app"; // must match Spotify dashboard
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token";
 const SCOPES = ["user-read-recently-played"];
