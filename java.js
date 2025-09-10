@@ -3,7 +3,6 @@ const REDIRECT_URI = "https://aaes250.github.io/test-app/"; // must match Spotif
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token";
 const SCOPES = ["user-read-recently-played"];
-
 // ===== FACTS BANK =====
 const facts = {
   Energetic: [
@@ -151,12 +150,14 @@ loginBtn.addEventListener("click", () => {
   const authUrl = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(
     REDIRECT_URI
   )}&scope=${encodeURIComponent(SCOPES.join(" "))}&response_type=${RESPONSE_TYPE}`;
+
+  console.log("AUTH URL:", authUrl); // 👈 Add this line
   window.location = authUrl;
 });
+
+
 
 logoutBtn.addEventListener("click", logout);
 
 // ===== INIT =====
 main();
-
-
