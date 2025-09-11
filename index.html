@@ -3,6 +3,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta
+  http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self'; 
+    script-src 'self' https://www.google.com https://www.gstatic.com; 
+    connect-src 'self' https://*.spotify.com https://*.google-analytics.com https://*.ingest.sentry.io https://*.googletagmanager.com https://www.google.com; 
+    frame-src https://www.google.com https://www.gstatic.com;
+  "
+/>
+
   <title>MoodMuse</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="java.js"></script>
